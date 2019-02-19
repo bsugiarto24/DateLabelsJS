@@ -9,16 +9,12 @@ Psalm 39:4
 
 <html>
 
-DATESssss
+DATES
 
 <script>
 	var dates;
 	var today = new Date();
-	var month = 3; 	
-	var day = 31; 	
-	var  year = 16; 	
-	var dayOfWeek = 3;
-	
+	var month, day, year, dayOfWeek; 	
 	var months = ["January", "February", "March", "April", "May", "June", "July",
 	"August", "September", "October", "November", "December"];
 
@@ -51,7 +47,7 @@ DATESssss
 
 	/* prayer requests for the month */
 	var para2 = document.createElement("P");
-	para2.innerHTML = (month + "/" + day-- + "/" + year + " " + weekdayArray[dayOfWeek-- % 7]);
+	para2.innerHTML = (months[month - 1] + " Prayer Requests");
 	document.body.appendChild(para2);
 
 	/* print out the days */
